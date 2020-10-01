@@ -1,7 +1,7 @@
 import loader from './Loader.js'
 let scale = 8
 let getRoom = (scene) =>{
-    loader.load('CLONE.glb', function (gltf) {
+    loader.load('CLONE.glb', function (gltf) { 
         scene.add(gltf.scene);
         gltf.scene.children.forEach(element => {
             // if(element.name == 'ROOM') return

@@ -12,7 +12,7 @@ key.start()
 //     console.log('stop');   
 // }, 1000*5);
 
-let speed = 1
+let speed = 1.5
 let rotationSpeed = 4
 
 let hormigaHandler = (gltf) => {

@@ -6,18 +6,15 @@
 }
 body{
     background-color: indigo;
+    font-family: sans-serif;
 }
 .joistick{
     position: absolute;
-    /* top: 0; */
     width: 100%;
-    /* height: 100px; */
-    /* border: 2px solid red; */
     background-color: rgba(128,128,128,.1);
-    /* margin-top: -50px; */
-    /* top: 50%; */
     bottom: 0;
     color: yellow;
+    display: none;
 }
 .canvas{
     position: fixed;
@@ -42,4 +39,20 @@ div.monitor4{
     top: 0;
     right: 0;
     color: red;
+    width: 0;
+}
+
+div.monitor4::after, div.monitor4::before{
+    color: chartreuse;
+    position: fixed;
+    z-index: 1;
+    left: 1em;
+}
+div.monitor4::before{
+    content: '[AWSD] para caminar';
+    bottom: 2em;
+}
+div.monitor4::after{
+    content: '[←↑→↓] para mover astronauta';
+    bottom: 1em;
 }

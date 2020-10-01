@@ -5,7 +5,7 @@ import Animator from './Animator.js';
 import loader from './Loader.js'
 let scale = 6
 let getImpostor = (scene) =>{
-    loader.load('bbb-hand.glb', function (gltf) {
+    loader.load('bbb-hand.glb', function (gltf) { 
 
         
         scene.add(gltf.scene);
